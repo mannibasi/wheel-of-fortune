@@ -35,20 +35,20 @@ describe('Wheel', function() {
   })
 
 
-  it('should add 6 elements to randomArray', function() {
+  xit('should add 6 elements to randomArray', function() {
     wheel.generateSixElements();
 
     expect(wheel.randomArray).to.have.lengthOf(6);
   });
 
-  it('should return 1 element', function() {
+  xit('should return 1 element', function() {
     let randomArray = [0];
     wheel.getSpinResult([100, 100, 100, 100]);
 
     expect(wheel.currentElement).to.equal(100);
   });
 
-  it('should call domUpdates', function() {
+  xit('should call domUpdates', function() {
     wheel.checkSpinElement();
 
     expect(domUpdates.displayScore).to.have.been.called(1);

@@ -33,7 +33,7 @@ describe('Player', function() {
   });
 
 
-  it('should change player to current player', function() {
+  xit('should change player to current player', function() {
     player.changePlayerTurn({turn: false});
 
     expect(domUpdates.instructPlayer).to.have.been.called(1);
@@ -41,7 +41,7 @@ describe('Player', function() {
   });
 
 
-  it('should Reset players current scores to 0 and add total to total score', function() {
+  xit('should Reset players current scores to 0 and add total to total score', function() {
     player.addTotalScore(currentPlayer);
 
     expect(player.score).to.equal(0);
@@ -49,7 +49,7 @@ describe('Player', function() {
   });
 
 
-  it('should check if currentplayer can buy a vowel', function() {
+  xit('should check if currentplayer can buy a vowel', function() {
     player.buyVowel(100);
 
     expect(buyVowel(100)).to.equal(true);
