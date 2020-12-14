@@ -31,7 +31,7 @@ describe('Puzzle', function() {
     expect(puzzle).to.have.all.keys('puzzleArray', 'splitAnswerArr')
   })
 
-  it('should return array of 4 objects', function() {
+  xit('should return array of 4 objects', function() {
   puzzle.generatePuzzles();
 
     expect(puzzle.puzzleArray.length).to.equal(4);
